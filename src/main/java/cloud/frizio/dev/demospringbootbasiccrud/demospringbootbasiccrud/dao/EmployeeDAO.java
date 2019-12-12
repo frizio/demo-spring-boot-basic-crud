@@ -7,5 +7,11 @@ import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.E
 public interface EmployeeDAO {
 
   public List<Employee> findAll();
+
+  public Employee findById(int id);
+
+  public void save(Employee employee);
+
+  public void deleteById(int id);
   
 }

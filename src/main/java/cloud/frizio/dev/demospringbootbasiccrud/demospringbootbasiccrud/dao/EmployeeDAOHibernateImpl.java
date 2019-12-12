@@ -26,19 +26,35 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
   @Override
   @Transactional
   public List<Employee> findAll() {
-
     // Get the current hibernate session
     Session currentSession = entityManager.unwrap(Session.class);
-
     // Create a query (using native Hibernate API)
     Query<Employee> theQuery = currentSession.createQuery("from Employee", Employee.class);
-
     // Execute query and get result list
     List<Employee> employees = theQuery.getResultList();
-
     // Return the result
     return employees;
   }
 
+  @Override
+  public Employee findById(int id) {
+    Session currentSession = entityManager.unwrap(Session.class);
+    Employee employee = currentSession.get(Employee.class, id);
+    return employee;
+  }
+
+  @Override
+  public void save(Employee employee) {
+    Session currentSession = entityManager.unwrap(Session.class);
+    currentSession.saveOrUpdate(employee);
+  }
+
+  @Override
+  public void deleteById(int id) {
+    Session currentSession = entityManager.unwrap(Session.class);
+    currentSession.createQuery("delete from Employee where id=:employeeId")
+                  .setParameter("employeeId", id)
+                  .executeUpdate();
+  }
   
 }
