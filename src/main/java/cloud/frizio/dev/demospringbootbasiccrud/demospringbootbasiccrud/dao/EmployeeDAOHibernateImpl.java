@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.Employee;
@@ -18,6 +19,7 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
   private EntityManager entityManager;
 
   //Set up constructor injection
+  @Autowired
   public EmployeeDAOHibernateImpl(EntityManager entityManager) {
     this.entityManager = entityManager;
   }
