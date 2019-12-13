@@ -1,4 +1,4 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.service;
+package cloud.frizio.dev.demospringbootbasiccrud.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.dao.EmployeeDAO;
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.Employee;
+import cloud.frizio.dev.demospringbootbasiccrud.dao.EmployeeDAO;
+import cloud.frizio.dev.demospringbootbasiccrud.entity.Employee;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {

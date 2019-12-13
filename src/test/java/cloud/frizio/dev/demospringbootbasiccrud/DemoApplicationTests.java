@@ -1,4 +1,4 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud;
+package cloud.frizio.dev.demospringbootbasiccrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

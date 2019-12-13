@@ -1,4 +1,4 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity;
+package cloud.frizio.dev.demospringbootbasiccrud.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

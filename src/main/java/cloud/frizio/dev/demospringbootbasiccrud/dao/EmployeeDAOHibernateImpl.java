@@ -1,4 +1,4 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.dao;
+package cloud.frizio.dev.demospringbootbasiccrud.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.Employee;
+import cloud.frizio.dev.demospringbootbasiccrud.entity.Employee;
 
 
 @Repository

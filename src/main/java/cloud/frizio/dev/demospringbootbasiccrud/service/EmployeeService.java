@@ -1,8 +1,8 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.service;
+package cloud.frizio.dev.demospringbootbasiccrud.service;
 
 import java.util.List;
 
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.Employee;
+import cloud.frizio.dev.demospringbootbasiccrud.entity.Employee;
 
 
 public interface EmployeeService {

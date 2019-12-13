@@ -1,4 +1,4 @@
-package cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.rest;
+package cloud.frizio.dev.demospringbootbasiccrud.rest;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.entity.Employee;
-import cloud.frizio.dev.demospringbootbasiccrud.demospringbootbasiccrud.service.EmployeeService;
+import cloud.frizio.dev.demospringbootbasiccrud.entity.Employee;
+import cloud.frizio.dev.demospringbootbasiccrud.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api")
