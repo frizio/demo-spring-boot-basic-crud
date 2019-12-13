@@ -7,9 +7,13 @@
     <version>2.2.2.RELEASE</version>
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
+
   <groupId>cloud.frizio.dev.demospringbootbasiccrud</groupId>
   <artifactId>demo-spring-boot-basic-crud</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
+
+  <packaging>war</packaging>
+
   <name>demo</name>
   <description>Demo project for Spring Boot</description>
 
@@ -59,6 +63,11 @@
           <artifactId>junit-vintage-engine</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
