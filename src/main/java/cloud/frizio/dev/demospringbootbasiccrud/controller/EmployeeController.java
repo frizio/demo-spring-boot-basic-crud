@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import cloud.frizio.dev.demospringbootbasiccrud.entity.Employee;
 import cloud.frizio.dev.demospringbootbasiccrud.service.EmployeeService;
@@ -42,7 +43,16 @@ public class EmployeeController {
     this.employeeService.save(employee);
     // Redirect to prevent duplicate submission
     return "redirect:/employees/list";
+  }
 
+  @GetMapping("/showFormForUpdate")
+  public String showFormForUpdate(@RequestParam("id") int id, Model model) {
+    // Get employee from the service
+    Employee employee = this.employeeService.findById(id);
+    // Pre populate the form
+    model.addAttribute("employee", employee);
+    // Send to the form
+    return "employees/employee-form";
   }
 
 }

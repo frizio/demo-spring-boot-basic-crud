@@ -18,6 +18,7 @@
       <h3 class="mt-2">New Employee</h3>
       <hr>
       <form action="#" th:action="@{/employees/save}" th:object="${employee}" method="POST">
+        <input type="hidden" th:field="*{id}">
         <input type="text" class="form-control mb-4 col-4" placeholder="First name" th:field="*{firstName}">
         <input type="text" class="form-control mb-4 col-4" placeholder="Last name" th:field="*{lastName}">
         <input type="text" class="form-control mb-4 col-4" placeholder="Email" th:field="*{email}">
